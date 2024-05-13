@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace FoodFactory
 {
-    internal class Fruit : FoodFactory
+    internal class Fruit : IFood
     {
-
+        string IFood.Name { get; set; }
+        float IFood.Price { get; set; }
+        DateTime IFood.ExpirationDate { get; set; }
     }
 }
