@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace FoodFactory
 {
-    public class FoodFactory
+    public static class FoodFactory
     {
-        public IFood NewFood(string type) => type switch
+        public static IFood NewFood(string type) => type switch
         {
             "fruit" => new Fruit(),
             "meat" => new Meat(),
